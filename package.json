@@ -1,5 +1,5 @@
 {
-  "name": "composition-api-state-managemet",
+  "name": "composition-api-vuex-modules",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,5 +23,7 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "keywords": [],
+  "description": ""
 }
