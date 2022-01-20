@@ -17,7 +17,7 @@ import { computed } from '@vue/reactivity'
 //  import {ref} from 'vue'
 import { useStore } from 'vuex'
 import { GET_COUNTER, INCREASE_COUNTER, DECREASE_COUNTER } from '@/store/mutation-types'
-import {mapGetters, mapMutations} from 'vuex'
+import {mapGetters, mapMutations, mapActions} from 'vuex'
 
  
 export default {
@@ -40,10 +40,10 @@ export default {
      //  decrease: () => store.commit(DECREASE_COUNTER),
 
       //  Refactor Vuex helpers
-      ...mapMutations({
+      ...mapActions({
         increase: INCREASE_COUNTER
       }),
-      ...mapMutations({
+      ...mapActions({
         decrease: DECREASE_COUNTER
       }),
     
